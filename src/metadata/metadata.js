@@ -69,7 +69,7 @@ module.exports = {
     }
   ],
   additional_experience: [
-    {
+    { 
       header: '修士研究：機械学習・画像認識・データ解析',
       skills: ['Python', 'OpenCV', 'C++', 'Git'],
       contents: `
@@ -79,11 +79,19 @@ module.exports = {
       `
     },
 
-
+    { 
+      header: '学会発表：日本物理学会機械学習',
+      contents: `
+      Full Detector Simulation of Pair Monitor and Application of Machine Learning to Determine Determine Beam Size
+      名古屋大学
+      `
+    },
+    { 
+      header: '学会発表：International Workshop on Future Linear Colliders',
+      contents: `
+      Search for weakly interacting dark matter in the International Linear Collider
+      テキサス大学、アーリントン校
+      `
+    },
   ],
-
-  
-
-  
-  
 };

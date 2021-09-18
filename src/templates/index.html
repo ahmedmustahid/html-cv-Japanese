@@ -73,6 +73,8 @@
     <br></br>
     <br></br>
     -->
+    <br></br>
+    <br></br>
     <h2>学歴</h2>
 
     <!--
@@ -86,9 +88,25 @@
     <p>東北大学<br> 学士、物理学 [2014 - 2018]</p>
     <p>東京外国語大学<br> 准学士、日本語 [2013 - 2014]</p>
 
-    <h2>追加プロジェクト</h2>
+    <h2>研究・学会発表</h2>
 
     {{#each additional_experience}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+
+            {{{markdown contents }}}
+
+            <div>
+                {{#each skills }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    {{#each additional_experience2}}
     <div class="card mt-4">
         <div class="card-body">
             <div class="mb-2"><strong>{{ header }}</strong></div>
@@ -111,6 +129,7 @@
     <!--
     <br></br>
     -->
+    <br></br>
     <h2>オンライン授業</h2>
     <ul>
         <li>
