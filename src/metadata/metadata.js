@@ -1,6 +1,6 @@
 module.exports = {
   name: 'ムスタヒド　アハメド',
-  title: '',
+  title: 'Mustahid Ahmed',
   facts: {
     '住所': '練馬区、東京都',
     '国籍': 'バングラデシュ',
@@ -49,24 +49,28 @@ module.exports = {
       badges: ['Python', 'C++', 'Git'],
 
       contents: `
+      最適化問題に関する研究
       線形計画や整数計画などのような数理計画法によってGurobi PythonとC++で物流最適化。
       `
     },
     {
-      title: '画像に対する異常認識',
+      title: '映像に対する異常認識',
       written: '5月 2020 - 11月 2020 ',
-      badges: ['Python', 'MySQL', 'Azure', 'Docker', 'Git'],
+      badges: ['Python', 'OpenCV', 'MySQL', 'Azure', 'Docker', 'Git'],
       contents: `
-        Later
+      深層学習による挙動解析の研究。
+      映像データから異常挙動認識のアルゴリズムの構築。
+      挙動認識の結果をAzureDBに保存。
       `
     }
   ],
   additional_experience: [
     {
       header: '修士研究：機械学習・画像認識・データ解析',
-      skills: ['Python', 'C++', 'Git'],
+      skills: ['Python', 'OpenCV', 'C++', 'Git'],
       contents: `
-        Later
+      C++によって、加速器での素粒子の衝突のシミュレーション・検出器のデザイン・精度の評価
+      検出器からのデータを画像に写像し、深層学習によって解析。
       `
     },
 
