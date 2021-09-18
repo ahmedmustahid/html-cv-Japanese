@@ -59,7 +59,7 @@ module.exports = {
     {
       title: '映像に対する異常認識',
       written: '5月 2020 - 11月 2020 ',
-      badges: ['Python', 'OpenCV', 'MySQL', 'Azure', 'Docker', 'Git'],
+      badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
       contents: `
 
       深層学習による挙動解析の研究。
@@ -71,7 +71,7 @@ module.exports = {
   additional_experience: [
     { 
       header: '修士研究：機械学習・画像認識・データ解析',
-      skills: ['Python', 'OpenCV', 'C++', 'Git'],
+      skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git'],
       contents: `
 
       C++によって、加速器での素粒子の衝突のシミュレーション・検出器のデザイン・精度の評価
