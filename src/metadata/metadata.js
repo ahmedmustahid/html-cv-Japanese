@@ -80,7 +80,7 @@ module.exports = {
     },
 
     { 
-      header: '学会発表：日本物理学会機械学習',
+      header: '学会発表：日本物理学会',
       contents: `
       Full Detector Simulation of Pair Monitor and Application of Machine Learning to Determine Determine Beam Size
       名古屋大学
@@ -94,4 +94,14 @@ module.exports = {
       `
     },
   ],
+
+  languages: [  
+    {
+      contents: `
+      英語：ビジネスレベル、TOEFL iBT 110
+      日本語：ビジネスレベル
+      `
+    },
+  ],
+
 };
