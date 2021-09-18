@@ -30,7 +30,8 @@ module.exports = {
       written: '6月 2021 - 現在',
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
-        To be filled later
+      AWS Amplify, AWS Api Gateway, AWS Lambda, AWS Sagemakerによってシステムデザインの構築。
+      Flutter/Dart/Swiftによってバックエンドとフロントエンドの作成。
       `
     },
     {
@@ -38,7 +39,8 @@ module.exports = {
       written: '2月 2021 – 5月 2021',
       badges: ['MySQL', 'Azure', 'Python', 'Git'],
       contents: `
-        Later
+      MySQLデータベーススキーマデザインし、Azure上にデプロイ。
+      ウエブアプリとデータベースの連携。
       `
     },
 {
@@ -47,8 +49,8 @@ module.exports = {
       badges: ['Python', 'C++', 'Git'],
 
       contents: `
-          Later
-        `
+      線形計画や整数計画などのような数理計画法によってGurobi PythonとC++で物流最適化。
+      `
     },
     {
       title: '画像に対する異常認識',
