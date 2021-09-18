@@ -4,11 +4,15 @@ module.exports = {
   facts: {
     '住所': '練馬区、東京都',
     '国籍': 'バングラデシュ',
-    'Git Profile': `<a href="https://github.com/ahmedmustahid">
+    'ギット': `<a href="https://github.com/ahmedmustahid">
                   <span class="print">https://github.com/ahmedmustahid</span>
                   <span class="screen">Github</span>
                 </a>`,
-    'Email': '<a href="mailto:amustahid25@gmail.com">amustahid25@gmail.com</a>'
+    'メール': '<a href="mailto:amustahid25@gmail.com">amustahid25@gmail.com</a>',
+    'ウェブサイト': `<a href="https://ahmedmustahid.github.io/html-cv-Japanese">
+                  <span class="print">https://ahmedmustahid.github.io/html-cv-Japanese</span>
+                  <span class="screen">ahmedmustahid.github.io</span>
+                </a>`,
   },
   skills: [
     ['Python', '++++'],
