@@ -9,19 +9,28 @@
 
     .card {
         border: none;
+        padding: 0.1em;
+        margin: 0.1em;
     }
 
     .card-body {
         padding: 0;
+        margin: 0.1em;
+    }
+
+    .card-content {
+        border: 14 mm;
+        margin: 0.1em;
     }
 
     .badge {
         border: 0.07rem solid #868e96;
+        margin: 0.1em;
     }
 
     .badge-primary {
-        color: inherit;
-        background-color: inherit;
+        color: blue;
+        background-color: blue;
     }
 }
 
@@ -72,60 +81,85 @@ a .fa {
     .col-print-1 {
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-2 {
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-3 {
         flex: 0 0 25%;
         max-width: 25%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-5 {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-6 {
         flex: 0 0 50%;
         max-width: 50%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-7 {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-8 {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-9 {
         flex: 0 0 75%;
         max-width: 75%;
+
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-10 {
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-11 {
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
     .col-print-12 {
         flex: 0 0 100%;
         max-width: 100%;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 }

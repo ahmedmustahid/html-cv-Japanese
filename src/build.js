@@ -24,7 +24,7 @@ const template = handlebars.compile(source);
 console.log(`${templateData.name}`);
 console.log(`${getSlug(templateData.name)}}`);
 //const pdfFileName = `${getSlug(templateData.name)}.${getSlug(templateData.title)}.pdf`;
-const pdfFileName ='test.pdf';
+const pdfFileName ='ahemdmustahid-jp.pdf';
 const html = template({
   ...templateData,
   baseUrl: `https://${username()}.github.io/${repoName.sync()}`,
