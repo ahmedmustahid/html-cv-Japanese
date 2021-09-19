@@ -62,16 +62,16 @@ module.exports = {
       badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
       contents: `
 
-      深層学習による挙動解析の研究。
-      映像データから異常挙動認識のアルゴリズムの構築。
-      挙動認識の結果をAzureDBに保存。
+      深層学習による人間活動の研究。
+      映像データから異常活動認識のアルゴリズムの構築。
+      活動認識の結果をAzureDBに保存。
       `
     }
   ],
   additional_experience: [
     { 
       header: '修士研究：機械学習・画像認識・データ解析',
-      skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git'],
+      skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
 
       C++によって、加速器での素粒子の衝突のシミュレーション・検出器のデザイン・精度の評価
