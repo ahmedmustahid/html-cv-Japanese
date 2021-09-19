@@ -30,11 +30,7 @@ module.exports = {
       written:'4月 2020 - Present',
       header: '機械学習エンジニア'
     },
-    {
-      title: '自家経営',
-      written:'4月 2020 - Present',
-      header: 'ソフトウェアエンジニア'
-    },
+    
 
   ],
 
