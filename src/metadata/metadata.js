@@ -2,9 +2,9 @@ module.exports = {
   name: 'ムスタヒド　アハメド',
   title: 'Mustahid Ahmed',
   facts: {
-    '住所': '練馬区、東京都',
+    '住所': '東京都',
     '国籍': 'バングラデシュ',
-    'ギット': `<a href="https://github.com/ahmedmustahid">
+    'Git': `<a href="https://github.com/ahmedmustahid">
                   <span class="print">https://github.com/ahmedmustahid</span>
                   <span class="screen">Github</span>
                 </a>`,
@@ -31,8 +31,8 @@ module.exports = {
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
 
-      AWS Amplify, AWS Api Gateway, AWS Lambda, AWS Sagemakerによってシステムデザインの構築。
-      Flutter/Dart/Swiftによってバックエンドとフロントエンドの作成。
+      AWS Amplify, AWS Api Gateway, AWS LambdaおよびAWS Sagemakerを用いたシステムデザインの構築。
+      Flutter/Dart/Swiftを用いたバックエンドとフロントエンドの作成。
       `
     },
     {
@@ -41,8 +41,8 @@ module.exports = {
       badges: ['MySQL', 'Azure', 'Python', 'Git'],
       contents: `
 
-      MySQLデータベーススキーマデザインし、Azure上にデプロイ。
-      ウエブアプリとデータベースの連携。
+      MySQLデータベーススキーマデザインを行い、Azure上にデプロイ。
+      ウエブアプリとデータベース間の連携。
       `
     },
 {
@@ -53,7 +53,7 @@ module.exports = {
       contents: `
 
       最適化問題に関する研究
-      線形計画や整数計画などのような数理計画法によってGurobi PythonとC++で物流最適化。
+      Gurobi PythonとC++を用いた、線形計画や整数計画などの数理計画法による物流最適化。
       `
     },
     {
