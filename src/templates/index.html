@@ -52,10 +52,42 @@
     -->
 
     <h2>経歴</h2>
-    {{#each projects}}
+    {{#each experiences}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }}</small></h3>
+
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+            <p class="text-muted">{{ written }}</p>
+
+
+            
+        </div>
+    </div>
+    {{/each}}
+
+    <h2>プロジェクト</h2>
+    {{#each projects1}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    {{#each projects2}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>自家経営</small></h3>
             <p class="text-muted">{{ written }}</p>
 
             <p class="card-content"> {{{markdown contents }}} </p>
@@ -120,6 +152,11 @@
     </div>
     {{/each}}
 
+    <!--
+    <br></br>
+    <br></br>
+    -->
+
     <h2>言語能力</h2>
     {{#each languages}}
     <div class="card mt-4">
@@ -133,6 +170,10 @@
      
     
 
+    <!--
+    <br></br>
+    -->
+    
     <!--
     <br></br>
     -->

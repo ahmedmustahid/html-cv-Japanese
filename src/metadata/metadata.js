@@ -24,7 +24,21 @@ module.exports = {
     ['アルゴリズム', '++++'],
     ['データ構造', '++++'],
   ],
-  projects: [
+  experiences: [
+    {
+      title: 'HyperCube Ltd.',
+      written:'4月 2020 - Present',
+      header: '機械学習エンジニア'
+    },
+    {
+      title: '自家経営',
+      written:'4月 2020 - Present',
+      header: 'ソフトウェアエンジニア'
+    },
+
+  ],
+
+  projects1: [
     {
       title: 'AI チャットボットアプリ',
       written: '6月 2021 - 現在',
@@ -45,16 +59,16 @@ module.exports = {
       ウエブアプリとデータベース間の連携。
       `
     },
-{
-      title: '物流最適化',
-      written: '12月 2020 - 2月 2021',
-      badges: ['Python', 'C++', 'Git'],
+    {
+        title: '物流最適化',
+        written: '12月 2020 - 2月 2021',
+        badges: ['Python', 'C++', 'Git'],
 
-      contents: `
+        contents: `
 
-      最適化問題に関する研究
-      Gurobi PythonとC++を用いた、線形計画や整数計画などの数理計画法による物流最適化。
-      `
+        最適化問題に関する研究
+        Gurobi PythonとC++を用いた、線形計画や整数計画などの数理計画法による物流最適化。
+        `
     },
     {
       title: '映像データを用いた異常認識',
@@ -68,12 +82,24 @@ module.exports = {
       `
     }
   ],
+  
+  projects2: [
+    {
+      title: 'Memorize: 脳トレーニング用のゲーム',
+      written: '6月 2021 - 現在',
+      badges: ['Swift', 'Git'],
+      contents: `
+
+      Swift言語を用いてフロントエンドの作成。
+      ゲームロジックの構築。
+      `
+    },
+  ],
   additional_experience: [
     { 
       header: '修士研究：機械学習・画像認識・データ解析',
       skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
-
       C++を用いた、加速器での素粒子の衝突シミュレーション・検出器のデザイン。
       検出器からのデータを映像化し、深層学習によって解析。
       `
