@@ -37,7 +37,7 @@ module.exports = {
     },
     {
       title: 'データベースデザイン・構築',
-      written: '2月 2021 – 5月 2021',
+      written: '3月 2021 – 5月 2021',
       badges: ['MySQL', 'Azure', 'Python', 'Git'],
       contents: `
 
@@ -57,13 +57,13 @@ module.exports = {
       `
     },
     {
-      title: '映像に対する異常認識',
+      title: '映像データを用いた異常認識',
       written: '5月 2020 - 11月 2020 ',
       badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
       contents: `
 
       深層学習による人間活動の研究。
-      映像データから異常活動認識のアルゴリズムの構築。
+      映像データから異常活動を認識するアルゴリズムの構築。
       活動認識の結果をAzureDBに保存。
       `
     }
@@ -74,8 +74,8 @@ module.exports = {
       skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
 
-      C++によって、加速器での素粒子の衝突のシミュレーション・検出器のデザイン・精度の評価
-      検出器からのデータを画像に写像し、深層学習によって解析。
+      C++を用いた、加速器での素粒子の衝突シミュレーション・検出器のデザイン。
+      検出器からのデータを映像化し、深層学習によって解析。
       `
     },
 
