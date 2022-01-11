@@ -27,7 +27,7 @@ module.exports = {
   experiences: [
     {
       title: 'HyperCube Ltd.',
-      written:'4月 2020 - Present',
+      written:'4月 2020 - 現在',
       header: '機械学習エンジニア'
     },
     
@@ -35,13 +35,22 @@ module.exports = {
   ],
 
   projects1: [
+{
+      title: '画像処理によってアトピー肌の認識',
+      written: '1月 2022 - 現在',
+      badges: ['python', 'OpenCV'],
+      contents: `
+
+      SIFTアルゴリズムによって特徴抽出して、アトピー肌画像の間にマッチングを行う
+      `
+    },
     {
       title: 'AI チャットボットアプリ',
-      written: '6月 2021 - 現在',
+      written: '6月 2021 - 12月 2021',
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
 
-      AWS Amplify, AWS Api Gateway, AWS LambdaおよびAWS Sagemakerを用いたシステムデザインの構築。
+      AWS Amplify, AWS Api Gateway, AWS Lambda及びAWS Sagemakerを用いたシステムデザインの構築。
       Flutter/Dart/Swiftを用いたバックエンドとフロントエンドの作成。
       `
     },
@@ -63,7 +72,7 @@ module.exports = {
         contents: `
 
         最適化問題に関する研究
-        Gurobi PythonとC++を用いた、線形計画や整数計画などの数理計画法による物流最適化。
+        Gurobi PythonとC++を用いた、線形計画や整数計画等の数理計画法による物流最適化。
         `
     },
     {
@@ -88,6 +97,15 @@ module.exports = {
 
       Swift言語を用いてフロントエンドの作成。
       ゲームロジックの構築。
+      `
+    },
+    {
+      title: 'amusta-chain: 分散的なp2pブロックチェーン',
+      written: '6月 2021 - 現在',
+      badges: ['Javascript', 'Git'],
+      contents: `
+      p2pダイナミックマイニングの構築
+      現在ワレットのフロントエンドを構築中
       `
     },
   ],
@@ -122,6 +140,7 @@ module.exports = {
       contents: `
       英語：ビジネスレベル、TOEFL iBT 110
       日本語：ビジネスレベル
+      ベンガル語：ネーティブレベル
       `
     },
   ],
