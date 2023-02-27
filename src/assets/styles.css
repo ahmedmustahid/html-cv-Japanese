@@ -32,6 +32,11 @@
         color: blue;
         background-color: blue;
     }
+
+    div {
+        break-inside: avoid;
+    }
+
 }
 
 @media not print {

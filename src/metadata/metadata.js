@@ -26,8 +26,13 @@ module.exports = {
   ],
   experiences: [
     {
+      title: 'Sensyn Robotics',
+      written:'5月 2022 - Present',
+      header: '機械学習エンジニア'
+    },
+    {
       title: 'HyperCube Ltd.',
-      written:'4月 2020 - 現在',
+      written:'4月 2020 - 4月 2022',
       header: '機械学習エンジニア'
     },
     
@@ -35,15 +40,45 @@ module.exports = {
   ],
 
   projects1: [
-{
-      title: '画像処理によってアトピー肌の認識',
-      written: '1月 2022 - 現在',
-      badges: ['python', 'OpenCV'],
+    {
+      title: 'タイル画像からひび割れの抽出',
+      written: '2月 2023 - 現在',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
       contents: `
-      FCResNet アルゴリズムによって画像から肌の部分の切り取りを行う
-      SIFTアルゴリズムによって特徴抽出して、アトピー肌画像の間にマッチングを行う
+      
+      トランスフォーマーに基づくアーキテクチャによって行われたひび割れのセグメンテーション
       `
     },
+    {
+      title: '画像認識によるアナログメーターの読み取り',
+      written: 'November 2022 - Present',
+      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM'],
+      contents: `
+      
+      Implemented and deployed model for analog gauge reading from web cam in Nvidia Jetson Nano
+      データセットを構築；モデルの構築を行ってジェットソンナノにデプロイ
+      `
+    },
+
+    {
+      title: '深層学習による手書きドキュメントからの情報を取り出す',
+      written: 'August 2022 - October 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
+      contents: `
+      
+      OCRによるドキュメント画像からの情報認識
+      `
+    },
+    {
+      title: '魚眼画像からの人物検出',
+      written: 'May 2022 - July 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV'],
+      contents: `
+      
+      一般的なモデルが魚眼画像に適応されていないため、対応できる新しいアルゴリズムによってひと検出
+      `
+    },
+    ,
     {
       title: 'AI チャットボットアプリ',
       written: '6月 2021 - 12月 2021',
