@@ -27,7 +27,7 @@ module.exports = {
   experiences: [
     {
       title: 'Sensyn Robotics',
-      written:'5月 2022 - Present',
+      written:'5月 2022 - 現在',
       header: '機械学習エンジニア'
     },
     {
@@ -39,7 +39,7 @@ module.exports = {
 
   ],
 
-  projects1: [
+  projects0: [
     {
       title: 'タイル画像からひび割れの抽出',
       written: '2月 2023 - 現在',
@@ -51,18 +51,17 @@ module.exports = {
     },
     {
       title: '画像認識によるアナログメーターの読み取り',
-      written: 'November 2022 - Present',
+      written: '11月 2022 - 現在',
       badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM'],
       contents: `
       
-      Implemented and deployed model for analog gauge reading from web cam in Nvidia Jetson Nano
       データセットを構築；モデルの構築を行ってジェットソンナノにデプロイ
       `
     },
 
     {
       title: '深層学習による手書きドキュメントからの情報を取り出す',
-      written: 'August 2022 - October 2022',
+      written: '8月 2022 - 10月 2022',
       badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
       contents: `
       
@@ -71,14 +70,17 @@ module.exports = {
     },
     {
       title: '魚眼画像からの人物検出',
-      written: 'May 2022 - July 2022',
+      written: '5月 2022 - 7月 2022',
       badges: ['Python', 'Pytorch', 'OpenCV'],
       contents: `
       
       一般的なモデルが魚眼画像に適応されていないため、対応できる新しいアルゴリズムによってひと検出
       `
     },
-    ,
+  ],
+
+  projects1: [
+    
     {
       title: 'AI チャットボットアプリ',
       written: '6月 2021 - 12月 2021',

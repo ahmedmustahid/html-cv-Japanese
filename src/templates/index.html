@@ -67,6 +67,24 @@
     {{/each}}
 
     <h2>プロジェクト</h2>
+    {{#each projects0}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>Sensyn Robotics</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+
     {{#each projects1}}
     <div class="card mb-4">
         <div class="card-body">
@@ -101,8 +119,10 @@
     </div>
     {{/each}}
 
+    <!--
     <br></br>
     <br></br>
+    -->
     <h2>学歴</h2>
 
     <!--
