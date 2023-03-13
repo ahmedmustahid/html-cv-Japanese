@@ -54,5 +54,6 @@ buildPdf = async function (inputFile, outputFile) {
   await browser.close();
 };
 
+console.log(`${outputDir}/${pdfFileName}`);
 // Build PDF
 buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdfFileName}`);
