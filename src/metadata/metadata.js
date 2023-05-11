@@ -35,7 +35,11 @@ module.exports = {
       written:'4月 2020 - 4月 2022',
       header: '機械学習エンジニア'
     },
-    
+    {
+      title: '個人事業主',
+      written:'4月 2022 - 現在',
+      header: '機械学習エンジニア'
+    },
 
   ],
 
@@ -126,6 +130,17 @@ module.exports = {
   ],
   
   projects2: [
+    {
+      title: '架電者ボットの開発',
+      written: '4月 2023 - 現在',
+      badges: ['Python', 'EspNet', 'Pytorch', 'OpenAi'],
+      contents: `
+      架電相手が話した内容をOpen AIのapiに投げてプロンプトエンジニアリングによって最適な返信の作成。
+      返信をEspNetによって音声化。
+     `
+
+    },
+
     {
       title: 'Memorize: 脳トレーニング用のゲーム',
       written: '6月 2021 - 現在',
