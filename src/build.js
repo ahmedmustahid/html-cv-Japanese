@@ -25,8 +25,8 @@ const source = fs.readFileSync(srcDir + '/templates/index.html', 'utf-8');
 const template = handlebars.compile(source);
 console.log(`${templateData.name}`);
 console.log(`${getSlug(templateData.name)}}`);
-const pdfFileName = `${getSlug(templateData.name)}.${getSlug(templateData.title)}.pdf`;
-//const pdfFileName ='ahmedmustahid-jp.pdf';
+//const pdfFileName = `${getSlug(templateData.name)}.${getSlug(templateData.title)}.pdf`;
+const pdfFileName ='ahmedmustahid-jp.pdf';
 const html = template({
   ...templateData,
   baseUrl: `https://${username()}.github.io/${repoName.sync()}`,
