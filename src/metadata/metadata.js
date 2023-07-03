@@ -15,10 +15,10 @@ module.exports = {
     ['C++17', '++++'],
     ['C', '++++'],
     ['Dart/Flutter', '++++'],
-    ['Swift', '+++'],
+    ['Javascript', '+++'],
     ['Azure', '+++'],
     ['AWS', '++++'],
-    ['統計学', '++++'],
+    ['音声認識', '++++'],
     ['画像解析', '++++'],
     ['自然言語処理', '+++'],
     ['アルゴリズム', '++++'],
@@ -26,8 +26,13 @@ module.exports = {
   ],
   experiences: [
     {
+      title: '個人事業主',
+      written:'4月 2022 - 現在',
+      header: '機械学習エンジニア'
+    },
+    {
       title: 'Sensyn Robotics',
-      written:'5月 2022 - 現在',
+      written:'5月 2022 - 6月 2023',
       header: '機械学習エンジニア'
     },
     {
@@ -35,12 +40,44 @@ module.exports = {
       written:'4月 2020 - 4月 2022',
       header: '機械学習エンジニア'
     },
+    
+
+  ],
+
+  projects3: [  
     {
-      title: '個人事業主',
-      written:'4月 2022 - 現在',
-      header: '機械学習エンジニア'
+      title: '架電者ボットの開発',
+      written: '4月 2023 - 現在',
+      badges: ['Python', 'EspNet', 'Pytorch', 'OpenAi', 'aiortc', 'node.js'],
+      contents: `
+      架電相手が話した内容をOpen AIのapiに投げてプロンプトエンジニアリングによって最適な返信の作成。
+      カッシングやストリーミングなどによってOpen AIの高速化。返信を音声化。
+      pythonとnode.js上のピア同士の間でwebRTCで音声ストリームを転送。
+     `
+
     },
 
+    {
+      title: '拡散モデルによるデザイン作成のアルゴリズムの開発',
+      written: '6月 2023 - 現在',
+      badges: ['Python', 'Pytorch', 'HuggingFace'],
+      contents: `
+      データセットの前処理。HuggingFace Datasetsに変換。
+      拡散モデルに基づく様々なアルゴリズムを使用して、ファインチューンを行う。推論の精度と高速化の検証
+      `
+    },
+
+    {
+      title: '画像ドキュメントから手書き文字認識',
+      written: '6月 2023 - 現在',
+      badges: ['Python', 'asyncio', 'aiohttp','Pytorch', 'HuggingFace'],
+      contents: `
+      asyncioやaiohttpを利用して膨大のデータをAPIに送信して、Bounding Boxを得る作業の高速化。
+      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)でエンコードして、日本語Bertでデコード。
+      現在パイプラインの高速化の作業を検討中。
+      `
+    },
+    
   ],
 
   projects0: [
@@ -49,7 +86,7 @@ module.exports = {
       written: '5月 2023 - 現在',
       badges: ['Python', 'OpenCV', 'Multiprocessing'],
       contents: `
-      特定の時間間隔でライブストリーム 動画にアルゴリズムを適用する機能を実装。感度パラメータを変更して各フレームを並列処理による高速化の実装。
+      特定の時間間隔でライブストリーム 動画にアルゴリズムを適用する機能を実装。感度パラメータを変更して各フレームを並列処理で高速化。
             `
     },
     {
@@ -139,16 +176,7 @@ module.exports = {
   ],
   
   projects2: [
-    {
-      title: '架電者ボットの開発',
-      written: '4月 2023 - 現在',
-      badges: ['Python', 'EspNet', 'Pytorch', 'OpenAi'],
-      contents: `
-      架電相手が話した内容をOpen AIのapiに投げてプロンプトエンジニアリングによって最適な返信の作成。
-      返信をEspNetによって音声化。
-     `
-
-    },
+  
 
     {
       title: 'Memorize: 脳トレーニング用のゲーム',

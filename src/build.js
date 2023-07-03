@@ -9,7 +9,9 @@ const repoName = require('git-repo-name');
 const username = require('git-username');
 
 const srcDir = __dirname;
+console.log(srcDir)
 const outputDir = __dirname + '/../dist';
+console.log(outputDir)
 
 // Clear dist dir
 fs.emptyDirSync(outputDir);
