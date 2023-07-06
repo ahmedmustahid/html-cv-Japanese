@@ -15,7 +15,7 @@
         <div class="col-md-6 col-print-6">
             <h1>ムスタヒド　アハメド<br/>Mustahid Ahmed</h1>
             <p>
-                <time datetime="" class="text-muted">更新日: July 3, 2023</time>
+                <time datetime="" class="text-muted">更新日: July 6, 2023</time>
             </p>
             <p>
                 <span class="screen"><a href="ahmedmustahid-jp.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF版 ダウンロード</a></span>
@@ -160,10 +160,27 @@
     <h2>プロジェクト</h2>
     <div class="card mb-4">
         <div class="card-body">
+            <h3>拡散モデルによるデザイン作成のアルゴリズムの開発,<small>個人事業主</small></h3>
+            <p class="text-muted">5月 2023 - 現在</p>
+
+            <p class="card-content"> <pre><code>  データセットの前処理。背景から物体を切り取りアルゴリズムの開発。
+  Stable Diffusionを元にDreamboothとControlNetを使用し、推論の精度と高速化を維持しながらファインチューンを行い、Out-paintingの実装。
+  </code></pre> </p>
+
+            <div>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">Pytorch</span>
+                <span class="badge badge-primary">HuggingFace</span>
+                <span class="badge badge-primary">生成AI</span>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-body">
             <h3>架電者ボットの開発,<small>個人事業主</small></h3>
             <p class="text-muted">4月 2023 - 現在</p>
 
-            <p class="card-content"> <pre><code>  架電相手が話した内容をOpen AIのapiに投げてプロンプトエンジニアリングによって最適な返信の作成。
+            <p class="card-content"> <pre><code>  架電相手が話した内容をOpen AIのapiに投げ、プロンプトエンジニアリングによって最適な返信の作成。
   カッシングやストリーミングなどによってOpen AIの高速化。返信を音声化。
   pythonとnode.js上のピア同士の間でwebRTCで音声ストリームを転送。
  </code></pre> </p>
@@ -180,26 +197,10 @@
     </div>
     <div class="card mb-4">
         <div class="card-body">
-            <h3>拡散モデルによるデザイン作成のアルゴリズムの開発,<small>個人事業主</small></h3>
-            <p class="text-muted">6月 2023 - 現在</p>
-
-            <p class="card-content"> <pre><code>  データセットの前処理。HuggingFace Datasetsに変換。
-  拡散モデルに基づく様々なアルゴリズムを使用して、ファインチューンを行う。推論の精度と高速化の検証
-  </code></pre> </p>
-
-            <div>
-                <span class="badge badge-primary">Python</span>
-                <span class="badge badge-primary">Pytorch</span>
-                <span class="badge badge-primary">HuggingFace</span>
-            </div>
-        </div>
-    </div>
-    <div class="card mb-4">
-        <div class="card-body">
             <h3>画像ドキュメントから手書き文字認識,<small>個人事業主</small></h3>
             <p class="text-muted">6月 2023 - 現在</p>
 
-            <p class="card-content"> <pre><code>  asyncioやaiohttpを利用して膨大のデータをAPIに送信して、Bounding Boxを得る作業の高速化。
+            <p class="card-content"> <pre><code>  asyncioやaiohttpを利用して膨大のデータをAPIに送信し、Bounding Boxを得る作業の高速化。
   yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)でエンコードして、日本語Bertでデコード。
   現在パイプラインの高速化の作業を検討中。
   </code></pre> </p>
