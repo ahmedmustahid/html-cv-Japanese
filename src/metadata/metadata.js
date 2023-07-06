@@ -45,34 +45,36 @@ module.exports = {
   ],
 
   projects3: [  
+
+    {
+      title: '拡散モデルによるデザイン作成のアルゴリズムの開発',
+      written: '5月 2023 - 現在',
+      badges: ['Python', 'Pytorch', 'HuggingFace', '生成AI'],
+      contents: `
+      データセットの前処理。背景から物体を切り取りアルゴリズムの開発。
+      Stable Diffusionを元にDreamboothとControlNetを使用し、推論の精度と高速化を維持しながらファインチューンを行い、Out-paintingの実装。
+      `
+    },
     {
       title: '架電者ボットの開発',
       written: '4月 2023 - 現在',
       badges: ['Python', 'EspNet', 'Pytorch', 'OpenAi', 'aiortc', 'node.js'],
       contents: `
-      架電相手が話した内容をOpen AIのapiに投げてプロンプトエンジニアリングによって最適な返信の作成。
+      架電相手が話した内容をOpen AIのapiに投げ、プロンプトエンジニアリングによって最適な返信の作成。
       カッシングやストリーミングなどによってOpen AIの高速化。返信を音声化。
       pythonとnode.js上のピア同士の間でwebRTCで音声ストリームを転送。
      `
 
     },
 
-    {
-      title: '拡散モデルによるデザイン作成のアルゴリズムの開発',
-      written: '6月 2023 - 現在',
-      badges: ['Python', 'Pytorch', 'HuggingFace'],
-      contents: `
-      データセットの前処理。HuggingFace Datasetsに変換。
-      拡散モデルに基づく様々なアルゴリズムを使用して、ファインチューンを行う。推論の精度と高速化の検証
-      `
-    },
+
 
     {
       title: '画像ドキュメントから手書き文字認識',
       written: '6月 2023 - 現在',
       badges: ['Python', 'asyncio', 'aiohttp','Pytorch', 'HuggingFace'],
       contents: `
-      asyncioやaiohttpを利用して膨大のデータをAPIに送信して、Bounding Boxを得る作業の高速化。
+      asyncioやaiohttpを利用して膨大のデータをAPIに送信し、Bounding Boxを得る作業の高速化。
       yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)でエンコードして、日本語Bertでデコード。
       現在パイプラインの高速化の作業を検討中。
       `
