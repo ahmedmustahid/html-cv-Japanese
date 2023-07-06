@@ -52,7 +52,7 @@ module.exports = {
       badges: ['Python', 'Pytorch', 'HuggingFace', '生成AI'],
       contents: `
       データセットの前処理。背景から物体を切り取りアルゴリズムの開発。
-      Stable Diffusionを元にDreamboothとControlNetを使用し、推論の精度と高速化を維持しながらファインチューンを行い、Out-paintingの実装。
+      Stable Diffusionを元にDreamboothとControlNetを使用し、推論の精度と高速度を維持しながらファインチューンを行い、Out-paintingの実装。
       `
     },
     {
@@ -75,8 +75,9 @@ module.exports = {
       badges: ['Python', 'asyncio', 'aiohttp','Pytorch', 'HuggingFace'],
       contents: `
       asyncioやaiohttpを利用して膨大のデータをAPIに送信し、Bounding Boxを得る作業の高速化。
-      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)でエンコードして、日本語Bertでデコード。
-      現在パイプラインの高速化の作業を検討中。
+      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)エンコーダー、日本語Bertデコーダーベースのモデルを構築し、
+      ファインチューンを行う。
+      SegFormerによるパイプラインの高速化の実装を検証中。
       `
     },
     
@@ -85,7 +86,7 @@ module.exports = {
   projects0: [
   {
       title: '火花検知のアルゴリズムに関するソフトウェア開発',
-      written: '5月 2023 - 現在',
+      written: '5月 2023 - 6月 2023',
       badges: ['Python', 'OpenCV', 'Multiprocessing'],
       contents: `
       特定の時間間隔でライブストリーム 動画にアルゴリズムを適用する機能を実装。感度パラメータを変更して各フレームを並列処理で高速化。
@@ -93,7 +94,7 @@ module.exports = {
     },
     {
       title: 'タイル画像からひび割れの抽出',
-      written: '2月 2023 - 現在',
+      written: '2月 2023 - 4月 2023',
       badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
       contents: `
       
@@ -102,7 +103,7 @@ module.exports = {
     },
     {
       title: '画像認識によるアナログメーターの読み取り',
-      written: '11月 2022 - 現在',
+      written: '11月 2022 - 3月 2023',
       badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM', 'ncnn'],
       contents: `
       
