@@ -52,7 +52,8 @@ module.exports = {
       badges: ['Python', 'Pytorch', 'HuggingFace', '生成AI'],
       contents: `
       データセットの前処理。背景から物体を切り取りアルゴリズムの開発。
-      Stable Diffusionを元にDreamboothとControlNetを使用し、推論の精度と高速度を維持しながらファインチューンを行い、Out-paintingの実装。
+      Stable Diffusionを元にControlNetを使用し、Pytorchで複数のGPU上でfully sharded学習の実装。Mixed Precisionと 
+      Gradient Accumulationによって学習速度の向上。
       `
     },
     {
