@@ -21,7 +21,9 @@ fs.copySync(srcDir + '/assets', outputDir);
 handlebars.registerHelper('markdown', markdownHelper);
 const source = fs.readFileSync(srcDir + '/templates/index.html', 'utf-8');
 const template = handlebars.compile(source);
-const pdfFileName = `${getSlug(templateData.name)}.${getSlug(templateData.title)}.pdf`;
+// const pdfFileName = `${getSlug(templateData.name)}.${getSlug(templateData.title)}.pdf`;
+const pdfFileName = 'ahmed.pdf'
+
 const html = template({
   ...templateData,
   baseUrl: `https://${username()}.github.io/${repoName.sync()}`,
@@ -36,7 +38,7 @@ buildPdf = async function (inputFile, outputFile) {
             '--no-sandbox',
             '--disable-setuid-sandbox'
         ]
-    });
+  });
   const page = await browser.newPage();
   await page.goto(`file://${inputFile}`, {
     waitUntil: 'networkidle0'
@@ -55,5 +57,6 @@ buildPdf = async function (inputFile, outputFile) {
   await browser.close();
 };
 
+console.log(`${outputDir}/${pdfFileName}`);
 // Build PDF
 buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdfFileName}`);

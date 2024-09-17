@@ -27,45 +27,43 @@ module.exports = {
 
   experiences: [
     {
-      title: 'Pioneer Electronics',
+      title: '株式会社 パイオニア',
       written:'July 2023 - Present',
-      header: 'Machine Learning Engineer'
+      header: '機械学習エンジニア'
     },
     {
-      title: 'Sensyn Robotics',
+      title: '株式会社 センシン　ロボティクス',
       written:'May 2022 - June 2023',
-      header: 'Machine Learning Engineer'
+      header: '機械学習エンジニア'
     },
     {
-      title: 'HyperCube Ltd.',
+      title: '株式会社　HyperCube',
       written:'April 2020 - April 2022',
-      header: 'Machine Learning Engineer'
+      header: '機械学習エンジニア'
     },
     {
-      title: 'Self employed',
+      title: '個人事業主',
       written:'April 2020 - Present',
-      header: 'Software Engineer'
+      header: 'ソフトウェアエンジニア'
     },
   ],
 
   projects2: [
     {
-      title: 'Implemented RAG pipeline with LLM for Qualcomm SoC',
+      title: 'Qualcomm SoCにおいてLLMとRAGのデプロイメント',
       written: 'April 2024 - August 2024',
       badges: ['C++', 'Conan', 'git', 'faiss', 'llama.cpp'],
       contents: `
-      Designed and implemented end to end RAG pipeline from scratch using faiss and llama.cpp. 
-      Increased RAG accuracy by choosing the correct embedding and chunk size. 
+      スクラッチからfaissとllama.cppを用いてRAGパイプラインの構築とクロスコンパイル
       `
     },
     {
-      title: 'Designed end to end middleware system for automotive radar',
+      title: '車載レーダー用のミドルウェアをE2Eまで構築',
       written: 'August 2023 - March 2024',
       badges: ['C++', 'CMake', 'git', 'CI/CD'],
       contents: `
-      
-      Implemented API to that obtains sensor data streams and transfers them to machine learning module to deliver inference results back into an alarm sytem.
-      Implemented lock free ring buffer system that stopped data loss and enabled extremely fast inference.
+      センサーデータストリームを機械学習モジュールに受け渡す用のシステムの構築。
+      ロックなしリングバッファの導入によって高速化。
       `
     },
   ],
@@ -82,13 +80,13 @@ module.exports = {
     //   `
     // },
     {
-      title: 'Analog gauge reading by computer vision',
+      title: '画像認識によるアナログメーターの読み取り',
       written: 'November 2022 - April 2023',
       badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM', 'ncnn'],
       contents: `
-      
-      Constructed model for accurately reading the analog gauge by determining the position of the dial, minimum and maximum values from the face of the scale after applying 
-      perspective transformation. Squeezed the model into smaller size by quantization in C++ and then deployed it into jetson nano.
+     
+      メーターを検出してから、針の位置と最大・最小値を正確に読み取れるアルゴリズムの構築；「量子化」によってモデル圧縮を行い、C++で「エッジ」デバイスにデプロイ。
+      納品されたこのプロダクトが社内と社外で大評価。
       `
     },
     // {
@@ -116,24 +114,23 @@ module.exports = {
   projects0: [
 
     {
-      title: 'NLP based Chatbot',
+      title: 'AI チャットボットアプリ',
       written: 'June 2021 - October 2021',
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
 
-      Model deployment, system design and maintenance using AWS Amplify, AWS Api Gateway, AWS Lambda, AWS Sagemaker.
-      Front and backend development using Flutter/Dart/Swift programming languages.
+      AWS Amplify, AWS Api Gateway, AWS Lambda及びAWS Sagemakerを用いたシステムデザインの構築。
+      Flutter/Dart/Swiftを用いたバックエンドとフロントエンドの作成。
       `
     },
     {
-      title: 'Database design and deployment',
+      title: 'データベースデザイン・構築',
       written: 'March 2021 – May 2021',
       badges: ['MySQL', 'Azure', 'Python', 'Git'],
       contents: `
 
-      Designed MySQL database schema and deployed it in Azure. 
-      Using web application API to connect web app with the database.
-      `
+      MySQLデータベーススキーマデザインを行い、Azure上にデプロイ。
+      ウエブアプリとデータベース間の連携。`
     },
 // {
 //       title: 'Supply Chain Optimization',
@@ -158,22 +155,54 @@ module.exports = {
   ],
 projects00: [
     {
-      title: 'Designed novel algorithm for OCR of Japanese fax documents',
+      title: 'Fax画像ドキュメントから手書き文字認識',
       written: 'Batton Ltd',
       badges: ['Python', 'Pytorch', 'torchserve','OCR', 'Docker', 'GCP'],
       contents: `
-    
-      Collected and labelled dataset of fax documents containing tables. Implemented novel algorithm to extract its data and obtained 97% accuracy.
-      Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created an inference endpoint.
+   
+      asyncioやaiohttpを利用して膨大のデータをAPIに送信し、Bounding Boxを得る作業の高速化。
+      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)エンコーダー、日本語Bertデコーダーベースのモデルを構築し、
+      ファインチューンを行う。
       `
     },   
     {
-      title: 'Japanese kanji generation from a specific font',
+      title: '与えられたフォントから日本語漢字の生成',
       written: 'AI Idea Lab',
       badges: ['Python', 'Image Generation'],
       contents: `
     
-      Used controlnet and prompt engineering to create Kanjis from novel fonts.
+      新しいフォントから日本語漢字を生成するようにControlNetの学習とプロンプトエンジニアリンの学習とプロンプトエンジニアリンググ
+      `
+    },
+    {
+      title: '架電者ボットの開発',
+      written: 'AI Idea Lab',
+      badges: ['Python', 'EspNet', 'Pytorch', 'OpenAi', 'aiortc', 'node.js'],
+      contents: `
+      架電相手が話した内容をOpen AIのapiに投げ、プロンプトエンジニアリングによって最適な返信の作成。
+      カッシングやストリーミングなどによってOpen AIの高速化。返信を音声化。
+      pythonとnode.js上のピア同士の間でwebRTCで音声ストリームを転送。
+     `
+
+    },
+        {
+      title: 'Memorize: 脳トレーニング用のゲーム',
+      written: '',
+      badges: ['Swift', 'Git'],
+      contents: `
+
+      Swift言語を用いてフロントエンドの作成。
+      ゲームロジックの構築。
+      `
+    },
+    {
+      title: 'amusta-chain: 分散的なp2pブロックチェーン',
+      written: '',
+      badges: ['Javascript', 'Git'],
+      contents: `
+      p2pダイナミックマイニングの構築
+      ユーザーのウオレットに送金できるような仕組みの構築
+      マイナーによってお金の取引の仕組みの構築
       `
     },
 
@@ -189,25 +218,24 @@ projects00: [
   ],
   additional_experience: [
     { 
-      header: 'Masters Thesis：Machine Learning, Deep Learning, Data Analysis',
+      header: '修士研究：機械学習・画像認識・データ解析',
       skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
 
-      Simulation of particle collisions and their reaction in particle detectors using C++.
-      Desiging particle detectors using C++ framework.
-      Analyzing data read by particle detectors using machine learning and deep learning algorithms.
+      C++を用いた、加速器での素粒子の衝突シミュレーション・検出器のデザイン。
+      検出器からのデータを映像化し、深層学習によって解析。
       `
     },
 
     { 
-      header: 'Conference Presentation: Japan Physical Society Annual Meeting',
+      header: '学会発表：日本物理学会',
       contents: `
       Full Detector Simulation of Pair Monitor and Application of Machine Learning to Determine Determine Beam Size
       Nagoya University, Nagoya, Japan [March ’20]
       `
     },
     { 
-      header: 'Conference Presentation：International Workshop on Future Linear Colliders',
+      header: '学会発表：International Workshop on Future Linear Colliders',
       contents: `
       Search for weakly interacting dark matter in the International Linear Collider
       University of Texas, Arlington, Texas, USA. [Oct ’18]
@@ -218,9 +246,9 @@ projects00: [
   languages: [  
     {
       contents: `
-      English, Business Level, TOEFL iBT 110
-      Japanese: Business Level
-      Bengali: Native Level
+      英語：ビジネスレベル、TOEFL iBT 110
+      日本語：ビジネスレベル
+      ベンガル語：ネーティブレベル 
       `
     },
   ],
