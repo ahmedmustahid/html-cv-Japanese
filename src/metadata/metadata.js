@@ -1,10 +1,10 @@
 module.exports = {
   name: 'ムスタヒド　アハメド',
-  title: 'Mustahid Ahmed',
+  title: '',
   facts: {
-    '住所': '東京都',
-    '国籍': 'バングラデシュ',
-    'Git': `<a href="https://github.com/ahmedmustahid">
+    '住所': 'Tokyo, Japan',
+    '国籍': 'Bangladesh',
+    'ギット': `<a href="https://github.com/ahmedmustahid">
                   <span class="print">https://github.com/ahmedmustahid</span>
                   <span class="screen">Github</span>
                 </a>`,
@@ -12,219 +12,205 @@ module.exports = {
   },
   skills: [
     ['Python', '++++'],
-    ['C++17', '++++'],
+    ['C++20', '++++'],
     ['C', '++++'],
     ['Dart/Flutter', '++++'],
-    ['Javascript', '+++'],
-    ['Azure', '+++'],
+    ['Swift', '+++'],
+    ['Javscript', '+++'],
     ['AWS', '++++'],
-    ['音声認識', '++++'],
-    ['画像解析', '++++'],
-    ['自然言語処理', '+++'],
-    ['アルゴリズム', '++++'],
-    ['データ構造', '++++'],
+    ['Statistics', '++++'],
+    ['Image Processing', '++++'],
+    ['NLP', '++++'],
+    ['Algorithms', '++++'],
+    ['Data Structure', '++++'],
   ],
+
   experiences: [
     {
-      title: '個人事業主',
-      written:'4月 2022 - 現在',
-      header: '機械学習エンジニア'
+      title: 'Pioneer Electronics',
+      written:'July 2023 - Present',
+      header: 'Machine Learning Engineer'
     },
     {
       title: 'Sensyn Robotics',
-      written:'5月 2022 - 6月 2023',
-      header: '機械学習エンジニア'
+      written:'May 2022 - June 2023',
+      header: 'Machine Learning Engineer'
     },
     {
       title: 'HyperCube Ltd.',
-      written:'4月 2020 - 4月 2022',
-      header: '機械学習エンジニア'
+      written:'April 2020 - April 2022',
+      header: 'Machine Learning Engineer'
     },
-    
-
+    {
+      title: 'Self employed',
+      written:'April 2020 - Present',
+      header: 'Software Engineer'
+    },
   ],
 
-  projects3: [  
-
+  projects2: [
     {
-      title: '拡散モデルによるデザイン作成のアルゴリズムの開発',
-      written: '5月 2023 - 現在',
-      badges: ['Python', 'Pytorch', 'HuggingFace', '生成AI'],
+      title: 'Implemented RAG pipeline with LLM for Qualcomm SoC',
+      written: 'April 2024 - August 2024',
+      badges: ['C++', 'Conan', 'git', 'faiss', 'llama.cpp'],
       contents: `
-      データセットの前処理。背景から物体を切り取りアルゴリズムの開発。
-      Stable Diffusionを元にControlNetを使用し、Pytorchで複数のGPU上でfully sharded学習の実装。Mixed Precisionと 
-      Gradient Accumulationによって学習速度の向上。
+      Designed and implemented end to end RAG pipeline from scratch using faiss and llama.cpp. 
+      Increased RAG accuracy by choosing the correct embedding and chunk size. 
       `
     },
     {
-      title: '架電者ボットの開発',
-      written: '4月 2023 - 現在',
-      badges: ['Python', 'EspNet', 'Pytorch', 'OpenAi', 'aiortc', 'node.js'],
-      contents: `
-      架電相手が話した内容をOpen AIのapiに投げ、プロンプトエンジニアリングによって最適な返信の作成。
-      カッシングやストリーミングなどによってOpen AIの高速化。返信を音声化。
-      pythonとnode.js上のピア同士の間でwebRTCで音声ストリームを転送。
-     `
-
-    },
-
-
-
-    {
-      title: '画像ドキュメントから手書き文字認識',
-      written: '6月 2023 - 現在',
-      badges: ['Python', 'asyncio', 'aiohttp','Pytorch', 'HuggingFace'],
-      contents: `
-      asyncioやaiohttpを利用して膨大のデータをAPIに送信し、Bounding Boxを得る作業の高速化。
-      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)エンコーダー、日本語Bertデコーダーベースのモデルを構築し、
-      ファインチューンを行う。
-      SegFormerによるパイプラインの高速化の実装を検証中。
-      `
-    },
-    
-  ],
-
-  projects0: [
-  {
-      title: '火花検知のアルゴリズムに関するソフトウェア開発',
-      written: '5月 2023 - 6月 2023',
-      badges: ['Python', 'OpenCV', 'Multiprocessing'],
-      contents: `
-      特定の時間間隔でライブストリーム 動画にアルゴリズムを適用する機能を実装。感度パラメータを変更して各フレームを並列処理で高速化。
-            `
-    },
-    {
-      title: 'タイル画像からひび割れの抽出',
-      written: '2月 2023 - 4月 2023',
-      badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
+      title: 'Designed end to end middleware system for automotive radar',
+      written: 'August 2023 - March 2024',
+      badges: ['C++', 'CMake', 'git', 'CI/CD'],
       contents: `
       
-      論文を調査するところ、医学雑誌に似たような問題の発見。論文を実装。シミュレーターによってデータの増量によって精度の向上。トランスフォーマーに基づくアーキテクチャによって行われたひび割れのセグメンテーション
-      `
-    },
-    {
-      title: '画像認識によるアナログメーターの読み取り',
-      written: '11月 2022 - 3月 2023',
-      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM', 'ncnn'],
-      contents: `
-      
-      メーターを検出してから、針の位置と最大・最小値を正確に読み取れるアルゴリズムの構築；「量子化」によってモデル圧縮を行い、C++で「エッジ」デバイスにデプロイ。
-      納品されたこのプロダクトが社内と社外で大評価。
-      `
-    },
-
-    {
-      title: '深層学習による手書きドキュメントからの情報を取り出す',
-      written: '8月 2022 - 10月 2022',
-      badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
-      contents: `
-      
-      画像化された手書き書類の表や節や図からデータを区別し、読み取ってから分類化を行う, Bertに基づくアルゴリズムの開発
-      `
-    },
-    {
-      title: '360度画像からの人物検出',
-      written: '5月 2022 - 7月 2022',
-      badges: ['Python', 'Pytorch', 'OpenCV'],
-      contents: `
-      
-      一般的なモデルが360度画像に適応されていないため、対応できる新しいアルゴリズムによって人検出。角度の情報を取り入れることによって精度の向上
+      Implemented API to that obtains sensor data streams and transfers them to machine learning module to deliver inference results back into an alarm sytem.
+      Implemented lock free ring buffer system that stopped data loss and enabled extremely fast inference.
       `
     },
   ],
 
   projects1: [
-    
+    // {
+    //   title: 'Crack segmentation from tiles',
+    //   written: 'Feb 2023 - Present',
+    //   badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
+    //   contents: `
+      
+    //   Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
+    //   in medicine literature
+    //   `
+    // },
     {
-      title: 'AI チャットボットアプリ',
-      written: '6月 2021 - 12月 2021',
+      title: 'Analog gauge reading by computer vision',
+      written: 'November 2022 - April 2023',
+      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM', 'ncnn'],
+      contents: `
+      
+      Constructed model for accurately reading the analog gauge by determining the position of the dial, minimum and maximum values from the face of the scale after applying 
+      perspective transformation. Squeezed the model into smaller size by quantization in C++ and then deployed it into jetson nano.
+      `
+    },
+    // {
+    //   title: 'Extraction of information from hand written documents using deep learning methods',
+    //   written: 'August 2022 - October 2022',
+    //   badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
+    //   contents: `
+      
+    //   Extracting data from tables, paragraphs, drawings etc in images of handwritten documents and serializing them into respective formats by 
+    //   means of a Bert based model
+    //   `
+    // },
+    // {
+    //   title: 'People detection from fish eye images',
+    //   written: 'May 2022 - July 2022',
+    //   badges: ['Python', 'Pytorch', 'OpenCV'],
+    //   contents: `
+      
+    //   Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
+    //   information of angular values of slanted bounding boxes.
+    //   `
+    // },
+  ],
+
+  projects0: [
+
+    {
+      title: 'NLP based Chatbot',
+      written: 'June 2021 - October 2021',
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
 
-      AWS Amplify, AWS Api Gateway, AWS Lambda及びAWS Sagemakerを用いたシステムデザインの構築。
-      Flutter/Dart/Swiftを用いたバックエンドとフロントエンドの作成。
+      Model deployment, system design and maintenance using AWS Amplify, AWS Api Gateway, AWS Lambda, AWS Sagemaker.
+      Front and backend development using Flutter/Dart/Swift programming languages.
       `
     },
     {
-      title: 'データベースデザイン・構築',
-      written: '3月 2021 – 5月 2021',
+      title: 'Database design and deployment',
+      written: 'March 2021 – May 2021',
       badges: ['MySQL', 'Azure', 'Python', 'Git'],
       contents: `
 
-      MySQLデータベーススキーマデザインを行い、Azure上にデプロイ。
-      ウエブアプリとデータベース間の連携。
+      Designed MySQL database schema and deployed it in Azure. 
+      Using web application API to connect web app with the database.
       `
     },
-    {
-        title: '物流最適化',
-        written: '12月 2020 - 2月 2021',
-        badges: ['Python', 'C++', 'Git'],
+// {
+//       title: 'Supply Chain Optimization',
+//       written: 'December 2020 - February 2021',
+//       badges: ['Python', 'C++', 'Git'],
 
-        contents: `
+//       contents: `
 
-        最適化問題に関する研究
-        Gurobi PythonとC++を用いた、線形計画や整数計画等の数理計画法による物流最適化。
-        `
-    },
-    {
-      title: '映像データを用いた異常認識',
-      written: '5月 2020 - 11月 2020 ',
-      badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
-      contents: `
+//       Research on optimization problems. 
+//       Using linear programming and integer programming methodologies in Gurobi Python and C++ for supply chain optimization.      `
+//     },
+    // {
+    //   title: 'Video Anomaly Detection',
+    //   written: 'May 2020 - November 2020 ',
+    //   badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
+    //   contents: `
 
-      深層学習による人間活動の研究。
-      映像データから異常活動を認識するアルゴリズムの構築。
-      活動認識の結果を保存するためにAzure SQLデータベースの構築。
-      `
-    }
+    //   Research on deep learning based activity detection algorithms.
+    //   Constructing and deploying algorithm to detect anomalous events in video.
+    //   Transferring the analysis data to Azure DB deployed in cloud.      `
+    // }
   ],
-  
-  projects2: [
-  
-
+projects00: [
     {
-      title: 'Memorize: 脳トレーニング用のゲーム',
-      written: '6月 2021 - 現在',
-      badges: ['Swift', 'Git'],
+      title: 'Designed novel algorithm for OCR of Japanese fax documents',
+      written: 'Batton Ltd',
+      badges: ['Python', 'Pytorch', 'torchserve','OCR', 'Docker', 'GCP'],
       contents: `
-
-      Swift言語を用いてフロントエンドの作成。
-      ゲームロジックの構築。
+    
+      Collected and labelled dataset of fax documents containing tables. Implemented novel algorithm to extract its data and obtained 97% accuracy.
+      Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created an inference endpoint.
+      `
+    },   
+    {
+      title: 'Japanese kanji generation from a specific font',
+      written: 'AI Idea Lab',
+      badges: ['Python', 'Image Generation'],
+      contents: `
+    
+      Used controlnet and prompt engineering to create Kanjis from novel fonts.
       `
     },
-    {
-      title: 'amusta-chain: 分散的なp2pブロックチェーン',
-      written: '6月 2021 - 現在',
-      badges: ['Javascript', 'Git'],
-      contents: `
-      p2pダイナミックマイニングの構築
-      ユーザーのウオレットに送金できるような仕組みの構築
-      マイナーによってお金の取引の仕組みの構築
-      `
-    },
+
+    // {
+    //   title: 'Memorize: A game for training memory',
+    //   written: 'June 2021 - Sep 2021',
+    //   badges: ['Swift', 'Git'],
+    //   contents: `
+    
+    //   Designing front end and game logic in Swift programming language.
+    //   `
+    // },
   ],
   additional_experience: [
     { 
-      header: '修士研究：機械学習・画像認識・データ解析',
+      header: 'Masters Thesis：Machine Learning, Deep Learning, Data Analysis',
       skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
-      C++を用いた、加速器での素粒子の衝突シミュレーション・検出器のデザイン。
-      検出器からのデータを映像化し、深層学習によって解析。
+
+      Simulation of particle collisions and their reaction in particle detectors using C++.
+      Desiging particle detectors using C++ framework.
+      Analyzing data read by particle detectors using machine learning and deep learning algorithms.
       `
     },
 
     { 
-      header: '学会発表：日本物理学会',
+      header: 'Conference Presentation: Japan Physical Society Annual Meeting',
       contents: `
       Full Detector Simulation of Pair Monitor and Application of Machine Learning to Determine Determine Beam Size
-      名古屋大学
+      Nagoya University, Nagoya, Japan [March ’20]
       `
     },
     { 
-      header: '学会発表：International Workshop on Future Linear Colliders',
+      header: 'Conference Presentation：International Workshop on Future Linear Colliders',
       contents: `
       Search for weakly interacting dark matter in the International Linear Collider
-      テキサス大学、アーリントン校
+      University of Texas, Arlington, Texas, USA. [Oct ’18]
       `
     },
   ],
@@ -232,9 +218,9 @@ module.exports = {
   languages: [  
     {
       contents: `
-      英語：ビジネスレベル、TOEFL iBT 110
-      日本語：ビジネスレベル
-      ベンガル語：ネーティブレベル
+      English, Business Level, TOEFL iBT 110
+      Japanese: Business Level
+      Bengali: Native Level
       `
     },
   ],

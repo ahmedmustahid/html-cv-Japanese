@@ -18,9 +18,10 @@
                 <time datetime="{{ buildinfo.date }}" class="text-muted">更新日: {{ updated }}</time>
             </p>
             <p>
-                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF版 ダウンロード</a></span>
-                <span class="print">オンラインバージョン <a href="{{ baseUrl }}" class="text-nowrap"><i
-                    class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
+                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF版ダウンロード</a></span>
+                <br>
+                <span class="print"> <a href="{{ baseUrl }}" class="text-nowrap">
+                    <i class="fa fa-github" aria-hidden="true"></i>オンライン版</a></span>
             </p>
         </div>
         <div class="col-md-6 col-print-6">
@@ -33,7 +34,7 @@
         </div>
     </div>
 
-    <h3 class="screen">Skills</h3>
+    <h3 class="screen">スキール</h3>
     <div class="row mb-4">
         {{#each skills}}
         <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
@@ -51,7 +52,9 @@
     </p>
     -->
 
-    <h2>経歴</h2>
+    <br>
+    <br>
+    <h2>職務経歴</h2>
     {{#each experiences}}
     <div class="card mb-4">
         <div class="card-body">
@@ -64,13 +67,14 @@
             
         </div>
     </div>
+    
+    
     {{/each}}
-
-    <h2>プロジェクト</h2>
-    {{#each projects3}}
+    <h2>Projects</h2>
+    {{#each projects2}}
     <div class="card mb-4">
         <div class="card-body">
-            <h3>{{ title }},<small>個人事業主</small></h3>
+            <h3>{{ title }},<small>Pioneer Electronics</small></h3>
             <p class="text-muted">{{ written }}</p>
 
             <p class="card-content"> {{{markdown contents }}} </p>
@@ -80,12 +84,13 @@
                 <span class="badge badge-primary">{{ this }}</span>
                 {{/each}}
             </div>
+            
         </div>
     </div>
     {{/each}}
 
     
-    {{#each projects0}}
+    {{#each projects1}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }},<small>Sensyn Robotics</small></h3>
@@ -103,7 +108,7 @@
     {{/each}}
 
 
-    {{#each projects1}}
+    {{#each projects0}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
@@ -120,10 +125,10 @@
     </div>
     {{/each}}
 
-    {{#each projects2}}
+    {{#each projects00}}
     <div class="card mb-4">
         <div class="card-body">
-            <h3>{{ title }},<small>自己作成</small></h3>
+            <h3>{{ title }},<small>Self Employed</small></h3>
             <p class="text-muted">{{ written }}</p>
 
             <p class="card-content"> {{{markdown contents }}} </p>
@@ -141,7 +146,7 @@
     <br></br>
     <br></br>
     -->
-    <h2>学歴</h2>
+    <h2>Education</h2>
 
     <!--
     <ul>
@@ -150,12 +155,12 @@
         <li>Milk</li>
     </ul>
     -->
-    <p>東北大学<br>修士、素粒子物理学 [2018 - 2020]</p>
-    <p>東北大学<br> 学士、物理学 [2014 - 2018]</p>
-    <p>東京外国語大学<br> 准学士、日本語 [2013 - 2014]</p>
+    <p>Tohoku University<br>MSc, Particle Physics [2018 - 2020]</p>
+    <p>Tohoku University<br> BSc, Physics [2014 - 2018]</p>
+    <p>Tokyo University of Foreign Studies<br> Associate Degree, Japanese [2013 - 2014]</p>
 
     
-    <h2>研究・学会発表</h2>
+    <h2>Research</h2>
 
     {{#each additional_experience}}
     <div class="card mt-4">
@@ -189,10 +194,8 @@
     </div>
     {{/each}}
 
-    <br></br>
-    <br></br>
 
-    <h2>言語能力</h2>
+    <h2>Languages</h2>
     {{#each languages}}
     <div class="card mt-4">
         <div class="card-body">
@@ -212,7 +215,7 @@
     <!--
     <br></br>
     -->
-    <h2>オンライン授業</h2>
+    <h2>MOOCs</h2>
     <ul>
         <li>
                 <a href="https://coursera.org/share/c283109e1c5c051a6edcb24e492d2f94">
