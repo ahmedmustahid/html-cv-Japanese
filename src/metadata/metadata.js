@@ -54,8 +54,8 @@ module.exports = {
       written: 'April 2024 - August 2024',
       badges: ['C++', 'Conan', 'git', 'faiss', 'llama.cpp'],
       contents: `
-      スクラッチからfaissとllama.cppを用いてRAGパイプラインの構築とクロスコンパイル。llama.cppの大規模なコードから引用してRAG用に自ら編集。
-      Unit testとCI CDの実装。
+      スクラッチからfaissとllama.cppを用いてRAGパイプラインの構築とクロスコンパイル。llama.cppの大規模なコードからモデルとembeddingを引用してRAG用に自ら編集。
+      Conanによってビルドシステムの構築。Unit testとCI CDの実装。
       `
     },
     {
