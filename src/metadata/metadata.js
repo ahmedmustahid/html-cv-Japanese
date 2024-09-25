@@ -54,7 +54,8 @@ module.exports = {
       written: 'April 2024 - August 2024',
       badges: ['C++', 'Conan', 'git', 'faiss', 'llama.cpp'],
       contents: `
-      スクラッチからfaissとllama.cppを用いてRAGパイプラインの構築とクロスコンパイル
+      スクラッチからfaissとllama.cppを用いてRAGパイプラインの構築とクロスコンパイル。llama.cppの大規模なコードから引用してRAG用に自ら編集。
+      Unit testとCI CDの実装。
       `
     },
     {
@@ -63,7 +64,7 @@ module.exports = {
       badges: ['C++', 'CMake', 'git', 'CI/CD'],
       contents: `
       センサーデータストリームを機械学習モジュールに受け渡す用のシステムの構築。
-      ロックなしリングバッファの導入によって高速化。
+      ロックなしリングバッファの導入によって高速化。CI CDパイプラインの構築。
       `
     },
   ],
@@ -116,7 +117,7 @@ module.exports = {
     {
       title: 'AI チャットボットアプリ',
       written: 'June 2021 - October 2021',
-      badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
+      badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git', 'CI/CD'],
       contents: `
 
       AWS Amplify, AWS Api Gateway, AWS Lambda及びAWS Sagemakerを用いたシステムデザインの構築。
@@ -161,8 +162,8 @@ projects00: [
       contents: `
    
       asyncioやaiohttpを利用して膨大のデータをAPIに送信し、Bounding Boxを得る作業の高速化。
-      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)エンコーダー、日本語Bertデコーダーベースのモデルを構築し、
-      ファインチューンを行う。
+      yolov8を使って手書きとタイプされた文字の分類化。Vision Transformer(ViT)エンコーダー、日本語Bertデコーダーベースのモデルを構築し、ファインチューンを行う。
+      GCPのArtifact Registry用にDocker上でモデルを渡すhttpサーバーを立ち上げる。このサーバーをVertex AI endpointとしてデプロイ。
       `
     },   
     {
@@ -171,7 +172,7 @@ projects00: [
       badges: ['Python', 'Image Generation'],
       contents: `
     
-      新しいフォントから日本語漢字を生成するようにControlNetの学習とプロンプトエンジニアリンの学習とプロンプトエンジニアリンググ
+      新しいフォントから日本語漢字を生成するようにControlNetの学習とプロンプトエンジニアリンの学習とプロンプトエンジニアリンググ。
       `
     },
     {
@@ -188,7 +189,7 @@ projects00: [
         {
       title: 'Memorize: 脳トレーニング用のゲーム',
       written: '',
-      badges: ['Swift', 'Git'],
+      badges: ['Swift', 'Git', 'CI/CD'],
       contents: `
 
       Swift言語を用いてフロントエンドの作成。
@@ -198,10 +199,10 @@ projects00: [
     {
       title: 'amusta-chain: 分散的なp2pブロックチェーン',
       written: '',
-      badges: ['Javascript', 'Git'],
+      badges: ['Javascript','Express', 'Node.js', 'Git', 'CI/CD'],
       contents: `
-      p2pダイナミックマイニングの構築
-      ユーザーのウオレットに送金できるような仕組みの構築
+      TDDの完全導入。
+      p2pダイナミックマイニングの構築。ユーザーのウオレットに送金できるような仕組みの構築。
       マイナーによってお金の取引の仕組みの構築
       `
     },
