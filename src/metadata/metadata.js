@@ -96,7 +96,7 @@ module.exports = {
       ],
       github: "https://github.com/ahmedmustahid/postgres-mcp-server/",
       contents:
-        "デュアルトランスポートサポート（HTTPおよびStdio）を備えた、本番環境対応のPostgreSQL MCP（Model Context Protocol）サーバーを開発。\n\n**主な貢献**\n\n* **デュアルトランスポートシステム**（HTTP & Stdio）を設計し、**FastAPI**を使用して**RESTful API**を構築。自動**OpenAPIドキュメンテーション**も完備。\n* **コネクションプーリング**、ステートフルな**セッション管理**、SQLインジェクションを防ぐためのセキュアな**パラメータ化クエリ**を特徴とする堅牢な**PostgreSQL統合**を設計。\n* デプロイの適応性を高めるため、**環境変数**と**コマンドライン引数**を使用した柔軟な**設定システム**を開発。\n* 本番環境対応の**Dockerコンテナ**と**Docker Compose**設定を作成し、デプロイを効率化。\n* システムの信頼性と安定性を確保するため、包括的な**エラーハンドリング**、正常な**シャットダウンロジック**、および完全な**テストスイート**を実装。",
+        "PostgreSQL用のMCPサーバーの構築。デュアルトランスポートサポート（HTTPおよびStdio）を備えた、本番環境対応のPostgreSQL MCP（Model Context Protocol）サーバーを開発。[MCPの公式のレポジトリ](https://github.com/modelcontextprotocol/servers)に貢献。\n\n**主な貢献**\n\n* **デュアルトランスポートシステム**（HTTP & Stdio）を設計し、**FastAPI**を使用して**RESTful API**を構築。自動**OpenAPIドキュメンテーション**も完備。\n* **コネクションプーリング**、ステートフルな**セッション管理**、SQLインジェクションを防ぐためのセキュアな**パラメータ化クエリ**を特徴とする堅牢な**PostgreSQL統合**を設計。\n* デプロイの適応性を高めるため、**環境変数**と**コマンドライン引数**を使用した柔軟な**設定システム**を開発。\n* 本番環境対応の**Dockerコンテナ**と**Docker Compose**設定を作成し、デプロイを効率化。\n* システムの信頼性と安定性を確保するため、包括的な**エラーハンドリング**、正常な**シャットダウンロジック**、および完全な**テストスイート**を実装。",
     },
     {
       title: "xiyan_mcp_server: Azure OpenAI, llama-cpp-python, & SQLite統合",
@@ -111,7 +111,7 @@ module.exports = {
       ],
       github: "https://github.com/ahmedmustahid/xiyan_mcp_server",
       contents:
-        "xiyan mcp serverプロジェクトに貢献し、包括的なAzure OpenAI統合を実装し、llama-cpp-pythonを通じてローカルモデルのサポートを強化。ストリーマブルHTTPトランスポートプロトコルを有効にし、SQLiteデータベースサポートを統合。\n\n**主な貢献:**\n\n- 設定可能なモデルエンドポイントとAPIバージョンを持つAzure OpenAI SDK統合を実装\n- 設定可能なホスト/ポートパラメータを持つストリーマブルHTTPトランスポートサポートを追加\n- ローカルでモデルを実行するためのllama-cpp-pythonローカルモデルサポートを有効化\n- 設定可能なダイアレクトとデータベースパスを持つSQLiteデータベースバックエンドを統合\n- 包括的なYAMLベースのセットアップで設定システムを強化\n- 包括的なエラーハンドリングとロギング機能を追加\n- すべての新機能について詳細なドキュメントと使用例を作成",
+        "xiyan mcp server（自然言語からSQLに変換用のMCPサーバー）プロジェクトに貢献し、包括的なAzure OpenAI統合を実装し、llama-cpp-pythonを通じてローカルモデルのサポートを強化。ストリーマブルHTTPトランスポートプロトコルを有効にし、SQLiteデータベースサポートを統合。\n\n**主な貢献:**\n\n- 設定可能なモデルエンドポイントとAPIバージョンを持つAzure OpenAI SDK統合を実装\n- 設定可能なホスト/ポートパラメータを持つストリーマブルHTTPトランスポートサポートを追加\n- ローカルでモデルを実行するためのllama-cpp-pythonローカルモデルサポートを有効化\n- 設定可能なダイアレクトとデータベースパスを持つSQLiteデータベースバックエンドを統合\n- 包括的なYAMLベースのセットアップで設定システムを強化\n- 包括的なエラーハンドリングとロギング機能を追加\n- すべての新機能について詳細なドキュメントと使用例を作成",
     },
     {
       title: "basedpyrightによる静的エラー修正のためのmcpサーバーを実装",
