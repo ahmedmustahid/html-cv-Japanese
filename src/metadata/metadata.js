@@ -17,7 +17,7 @@ module.exports = {
     ["C", "++++"],
     ["Dart/Flutter", "++++"],
     ["Swift", "+++"],
-    ["Javscript", "+++"],
+    ["Typescript", "+++"],
     ["AWS", "++++"],
     ["統計学", "++++"],
     ["画像処理", "++++"],
@@ -85,15 +85,7 @@ module.exports = {
     {
       title: "PostgreSQL MCPサーバー：デュアルトランスポートとデータベース統合",
       written: "2025年1月",
-      badges: [
-        "Python",
-        "PostgreSQL",
-        "MCPプロトコル",
-        "HTTP",
-        "Stdio",
-        "Docker",
-        "FastAPI",
-      ],
+      badges: ["Typescript", "PostgreSQL", "MCPプロトコル", "Docker"],
       github: "https://github.com/ahmedmustahid/postgres-mcp-server/",
       contents:
         "PostgreSQL用のMCPサーバーの構築。デュアルトランスポートサポート（HTTPおよびStdio）を備えた、本番環境対応のPostgreSQL MCP（Model Context Protocol）サーバーを開発。[MCPの公式のレポジトリ](https://github.com/modelcontextprotocol/servers)に貢献。\n\n**主な貢献**\n\n* **デュアルトランスポートシステム**（HTTP & Stdio）を設計し、**FastAPI**を使用して**RESTful API**を構築。自動**OpenAPIドキュメンテーション**も完備。\n* **コネクションプーリング**、ステートフルな**セッション管理**、SQLインジェクションを防ぐためのセキュアな**パラメータ化クエリ**を特徴とする堅牢な**PostgreSQL統合**を設計。\n* デプロイの適応性を高めるため、**環境変数**と**コマンドライン引数**を使用した柔軟な**設定システム**を開発。\n* 本番環境対応の**Dockerコンテナ**と**Docker Compose**設定を作成し、デプロイを効率化。\n* システムの信頼性と安定性を確保するため、包括的な**エラーハンドリング**、正常な**シャットダウンロジック**、および完全な**テストスイート**を実装。",
