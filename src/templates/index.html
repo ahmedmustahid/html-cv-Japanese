@@ -1,259 +1,377 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ name }}. {{ title }}</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="container page">
-    <div class="row">
-        <div class="col-md-6 col-print-6">
-            <h1>{{ name }}<br/>{{ title }}</h1>
-            <p>
-                <time datetime="{{ buildinfo.date }}" class="text-muted">更新日: {{ updated }}</time>
-            </p>
-            <p>
-                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF版ダウンロード</a></span>
-                <br>
-                <span class="print"> <a href="{{ baseUrl }}" class="text-nowrap">
-                    <i class="fa fa-github" aria-hidden="true"></i>オンライン版</a></span>
-            </p>
-        </div>
-        <div class="col-md-6 col-print-6">
-            <dl class="row">
-                {{#each facts}}
-                <dt class="col-md-3">{{ @key }}</dt>
-                <dd class="col-md-9">{{{ this }}}</dd>
-                {{/each}}
-            </dl>
-        </div>
-    </div>
 
-    <h3 class="screen">スキール</h3>
-    <div class="row mb-4">
-        {{#each skills}}
-        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
-            <small>{{ this.[0] }}</small>
+<body>
+    <div class="container page">
+        <div class="row">
+            <div class="col-md-6 col-print-6">
+                <h1>{{ name }}<br />{{ title }}</h1>
+                <p>
+                    <time datetime="{{ buildinfo.date }}" class="text-muted">last updated: {{ updated }}</time>
+                </p>
+                <p>
+                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
+                                aria-hidden="true"></i>Download PDF</a></span>
+                    <br>
+                    <span class="print"> <a href="{{ baseUrl }}" class="text-nowrap">
+                            <i class="fa fa-github" aria-hidden="true"></i>Online Version</a></span>
+                </p>
+            </div>
+            <div class="col-md-6 col-print-6">
+                <dl class="row">
+                    <dt class="col-md-3"><i class="fa fa-map-marker" aria-hidden="true"></i> 居住地 </dt>
+                    <dd class="col-md-9">{{{ facts.居住地 }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-flag" aria-hidden="true"></i> 国籍 </dt>
+                    <dd class="col-md-9">{{{ facts.国籍 }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-github" aria-hidden="true"></i> Git </dt>
+                    <dd class="col-md-9">{{{ facts.[Gitプロフィール] }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-envelope" aria-hidden="true"></i> メール </dt>
+                    <dd class="col-md-9">{{{ facts.メールアドレス }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-globe" aria-hidden="true"></i> ウェブサイト </dt>
+                    <dd class="col-md-9">{{{ facts.ウェブサイト }}}</dd>
+                </dl>
+            </div>
         </div>
-        <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            {{ this.[1] }}
+
+        <br>
+        <h3 class="screen">Skills</h3>
+        <div class="row mb-4">
+            {{#each skills}}
+            <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
+                <small>{{ this.[0] }}</small>
+            </div>
+            <div class="col-print-1 col-3 col-md-2 col-lg-1">
+                {{ this.[1] }}
+            </div>
+            {{/each}}
+        </div>
+        <br>
+        <h2>Professional Experiece</h2>
+        {{#each experiences}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3><small>{{ title }}</small></h3>
+                <div class="mb-2"><strong>{{ header }}</strong></div>
+                <p class="text-muted">{{ written }}</p>
+            </div>
+        </div>
+
+        <br>
+
+        {{/each}}
+        <h2>プロジェクト</h2>
+        {{#each projects3}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>IBM System Engineering</small></h3>
+                <p class="text-muted">{{ written }}</p>
+
+                <p class="card-content"> {{{markdown contents }}} </p>
+
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
+
+            </div>
         </div>
         {{/each}}
-    </div>
-    <!--
-    <p>
-        機械学習とデータ解析とともにSwift/Flutter/Dart環境でアプリ開発の経験ももっています。機械学習のモデル構築からクラウドサービスを利用して、アプリまでに結果を反映させる
-        実務経験がありますので、これからの仕事に活かして行きたいと思います。
-    </p>
-    -->
 
-    <h2>経歴</h2>
-    {{#each experiences}}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>{{ title }}</small></h3>
+        {{#each projects3_1}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>Open Source Contributor</small></h3>
+                <p class="text-muted">{{ written }}</p>
 
-            <div class="mb-2"><strong>{{ header }}</strong></div>
-            <p class="text-muted">{{ written }}</p>
-            
-        </div>
-    </div>
-    
-   <br> 
-    {{/each}}
-    <h2>プロジェクト</h2>
-    {{#each projects2}}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>{{ title }},<small>Pioneer Electronics</small></h3>
-            <p class="text-muted">{{ written }}</p>
+                <p class="card-content"> {{{markdown contents }}} </p>
 
-            <p class="card-content"> {{{markdown contents }}} </p>
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
 
-            <div>
-                {{#each badges }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
-            
-        </div>
-    </div>
-    {{/each}}
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
 
-    
-    {{#each projects1}}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>{{ title }},<small>Sensyn Robotics</small></h3>
-            <p class="text-muted">{{ written }}</p>
-
-            <p class="card-content"> {{{markdown contents }}} </p>
-
-            <div>
-                {{#each badges }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
             </div>
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 
+        {{#each projects2}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>Pioneer Electronics</small></h3>
+                <p class="text-muted">{{ written }}</p>
 
-    {{#each projects0}}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
-            <p class="text-muted">{{ written }}</p>
+                <p class="card-content"> {{{markdown contents }}} </p>
 
-            <p class="card-content"> {{{markdown contents }}} </p>
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
 
-            <div>
-                {{#each badges }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
+
             </div>
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 
-    {{#each projects00}}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>{{ title }},<small>Self Employed</small></h3>
-            <p class="text-muted">{{ written }}</p>
 
-            <p class="card-content"> {{{markdown contents }}} </p>
+        {{#each projects1}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>Sensyn Robotics</small></h3>
+                <p class="text-muted">{{ written }}</p>
 
-            <div>
-                {{#each badges }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
+                <p class="card-content"> {{{markdown contents }}} </p>
+
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
             </div>
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 
-    <!--
-    <br></br>
-    <br></br>
-    -->
-    <h2>Education</h2>
+        <br>
 
-    <!--
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    -->
-    <p>東北大学<br>修士、素粒子物理学 [2018 - 2020]</p>
-    <p>東北大学<br> 学士、物理学 [2014 - 2018]</p>
-    <p>東京外国語大学<br> 准学士、日本語 [2013 - 2014]</p>
+        {{#each projects0}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
+                <p class="text-muted">{{ written }}</p>
 
-    
-    <h2>Research</h2>
+                <p class="card-content"> {{{markdown contents }}} </p>
 
-    {{#each additional_experience}}
-    <div class="card mt-4">
-        <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
 
-            {{{markdown contents }}}
-
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
             </div>
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 
-    {{#each additional_experience2}}
-    <div class="card mt-4">
-        <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
+        {{#each projects01}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>Batton Ltd.</small></h3>
+                <p class="text-muted">{{ written }}</p>
 
-            {{{markdown contents }}}
+                <p class="card-content"> {{{markdown contents }}} </p>
 
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
             </div>
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 
+        {{#each projects02}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>AI Idea Lab Ltd.</small></h3>
+                <p class="text-muted">{{ written }}</p>
 
-    <h2>Languages</h2>
-    {{#each languages}}
-    <div class="card mt-4">
-        <div class="card-body">
+                <p class="card-content"> {{{markdown contents }}} </p>
 
-            {{{markdown contents }}}
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
 
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
+            </div>
         </div>
-    </div>
-    {{/each}} 
-     
-    
+        {{/each}}
 
-    <!--
-    <br></br>
-    -->
-    
-    
-    <br></br>
-   
-    
-    
-    
-    <h2>MOOCs</h2>
-    <ul>
-        <li>
+        {{#each projects00}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }},<small>Open Source Contributor</small></h3>
+                <p class="text-muted">{{ written }}</p>
+
+                <p class="card-content"> {{{markdown contents }}} </p>
+
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+
+                {{#if github}}
+                <div class="mt-2">
+                    <a href="{{ github }}" class="text-nowrap">
+                        <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+
+        <h2>学歴</h2>
+
+        <p>東北大学<br>修士課程、素粒子物理学 [2018 - 2020]</p>
+        <p>東北大学<br>学士、物理学 [2014 - 2018]</p>
+        <p>東京外国語大学<br> 準学士、日本語 [2013 - 2014]</p>
+
+
+        <h2>研究</h2>
+
+        {{#each additional_experience}}
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="mb-2"><strong>{{ header }}</strong></div>
+
+                {{{markdown contents }}}
+
+                <div>
+                    {{#each skills }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+        {{#each additional_experience2}}
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="mb-2"><strong>{{ header }}</strong></div>
+
+                {{{markdown contents }}}
+
+                <div>
+                    {{#each skills }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+        <h2>言語能力</h2>
+        {{#each languages}}
+        <div class="card mt-4">
+            <div class="card-body">
+
+                {{{markdown contents }}}
+
+            </div>
+        </div>
+        {{/each}}
+
+
+
+
+        <h2>MOOCs</h2>
+        <ul>
+            <li>
                 <a href="https://coursera.org/share/c283109e1c5c051a6edcb24e492d2f94">
-                  <span class="print">Deep Learning Specialization</span>
-                  <span class="screen">Deep Learning Specialization</span>
+                    <span class="print">Deep Learning Specialization</span>
+                    <span class="screen">Deep Learning Specialization</span>
                 </a>
-            : Coursera, Stanford Online
-        </li>
-        <li>
-                <a href="https://coursera.org/share/e986a25a15bb08045ef01c54b96b2ef3">
-                  <span class="print">Algorithm Specialization</span>
-                  <!--<span class="print">https://coursera.org/share/e986a25a15bb08045ef01c54b96b2ef3</span>-->
-                  <span class="screen">Algorithm Specialization</span>
+                : Coursera, Stanford Online
+            </li>
+            <li>
+                <a href="https://coursera.org/share/c86e641705e283b213de33e03ed815e8">
+                    <span class="print">Algorithm Specialization</span>
+                    <span class="screen">Algorithm Specialization</span>
                 </a>
-            : Coursera, Stanford Online
-        </li>
+                : Coursera, Stanford Online
+            </li>
 
-        <li>
+            <li>
                 <a href="https://coursera.org/share/b55f70f8914bae27a747483a1b72feca">
-                  <span class="print">GAN Specialization</span>
-                  <span class="screen">GAN Specialization</span>
+                    <span class="print">GAN Specialization</span>
+                    <span class="screen">GAN Specialization</span>
                 </a>
-            : Coursera, Stanford Online
-        </li>
-        <li>
+                : Coursera, Stanford Online
+            </li>
+            <li>
                 <a href="https://coursera.org/share/d551c1292b10985cb36060db19ad8864">
-                  <span class="print">NLP Specialization</span>
-                  <span class="screen">NLP Specialization</span>
+                    <span class="print">NLP Specialization</span>
+                    <span class="screen">NLP Specialization</span>
                 </a>
-            : Coursera, Stanford Online
-        </li>
-          <br>
-            Categories: 
-            <span class="badge badge-primary">Python</span> 
-            <span class="badge badge-primary">C++</span> 
-            <span class="badge badge-primary">Algorithms</span> 
+                : Coursera, Stanford Online
+            </li>
+            <br>
+            Categories:
+            <span class="badge badge-primary">Python</span>
+            <span class="badge badge-primary">C++</span>
+            <span class="badge badge-primary">Algorithms</span>
             <span class="badge badge-primary">Deep Learning</span>
-        </li>
-    </ul>
-</div>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>
